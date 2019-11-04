@@ -1,3 +1,9 @@
 <h1>Sign Up Below:</h1>
+  <form action="/users/home" method="POST">
+    name: <input type="text" id="name" name="User[name]">
+    email: <input type="text" id="email" name="User[email]">
+    password: <input type="text" id="password" name="User[password]">
+    <input type="submit" value="Sign Up">
+  </form>
 
-
+  <h1><%= "Welcome, #{User.name}!" %></h1>
